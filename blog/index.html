@@ -1,0 +1,180 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <title>Blog</title><!-- HEAD_svelte-f4s33s_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><link rel="icon" type="image/png" sizes="32x32" href="https://jbbjtodsvhsgjappwopg.supabase.co/storage/v1/object/public/sites/prisaka/assets/logoipsum-277.svg"><link rel="preconnect" href="https://fonts.bunny.net"><meta name="description" content="Our blog to learn everything you need to save the trees"><style>/* Reset & standardize default styles */
+@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
+
+/* Design tokens (apply to components) */
+:root {
+  /* Custom theme options */
+  --color-accent: #004700;
+
+  /* Base values */
+  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  --border-radius: 0;
+  --border-color: #e0e1e1;
+}
+
+/* Root element (use instead of `body`) */
+#page {
+  font-family: system-ui, sans-serif;
+  color: #111;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  background: white;
+}
+
+/* Elements */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+a.link {
+  line-height: 1.3;
+
+  border-bottom: 2px solid var(--color-accent);
+  transform: translateY(-2px); /* move link back into place */
+  transition: var(--transition, 0.1s border);
+}
+
+a.link:hover {
+    border-color: transparent;
+  }
+
+.heading {
+  font-size: 2.5rem;
+  line-height: 1.15;
+
+}
+
+.button {
+  color: white;
+  background: var(--color-accent, rebeccapurple);
+  border-radius: 0;
+  padding: 18px 24px;
+  transition: var(--transition, 0.1s box-shadow);
+  border: 0;
+}
+
+/* reset */
+
+.button:hover {
+    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);
+  }
+
+.button.inverted {
+    background: transparent;
+    color: var(--color-accent, rebeccapurple);
+  }
+
+/* Content Section */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+.content p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+.content img {
+    width: 100%;
+    margin: 2rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+  }
+.content a.link {
+    line-height: 1.3;
+    font-weight: 500;
+    border-bottom: 2px solid var(--color-accent);
+    transform: translateY(-2px); /* move link back into place */
+    transition: var(--transition, 0.1s border);
+  }
+.content a.link:hover {
+      border-color: transparent;
+    }
+.content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+.content h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+.content h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+.content ul {
+    list-style: disc;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.content ol {
+    list-style: decimal;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.content blockquote {
+    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--color-accent);
+  }
+</style><!-- HEAD_svelte-f4s33s_END -->
+      <style>.section-container.svelte-136lx2d.svelte-136lx2d{display:flex;justify-content:space-between;align-items:center;padding-block:2rem}.logo.svelte-136lx2d.svelte-136lx2d{font-size:1.5rem;font-weight:600;line-height:1.2}.desktop-nav.svelte-136lx2d.svelte-136lx2d{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-136lx2d nav.svelte-136lx2d{display:flex;gap:2rem}.desktop-nav.svelte-136lx2d nav a.link.svelte-136lx2d{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem}.desktop-nav.svelte-136lx2d nav a.link.svelte-136lx2d:hover,.desktop-nav.svelte-136lx2d nav a.link .active.svelte-136lx2d{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-136lx2d.svelte-136lx2d{display:flex
+}}.mobile-nav.svelte-136lx2d.svelte-136lx2d{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-136lx2d.svelte-136lx2d{display:none
+}}#popup.svelte-136lx2d.svelte-136lx2d{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-136lx2d button#close.svelte-136lx2d{position:absolute;right:1rem;top:1rem}
+.teasers.svelte-zvxqyf.svelte-zvxqyf{display:grid;gap:6rem}.teaser.svelte-zvxqyf.svelte-zvxqyf{display:grid;gap:3rem}.teaser.svelte-zvxqyf img.svelte-zvxqyf{width:100%;border-radius:var(--border-radius)}.teaser.svelte-zvxqyf .body.svelte-zvxqyf{display:grid;place-items:flex-start;gap:1.5rem;padding:0;line-height:1.5}.teaser.svelte-zvxqyf .body .title.svelte-zvxqyf{font-size:2.25rem;font-weight:500;line-height:1.25}@media(min-width: 800px){.teaser.svelte-zvxqyf.svelte-zvxqyf{grid-template-columns:1fr 1fr;place-items:center
+
+    /* switch direction for even items */
+}.teaser.svelte-zvxqyf:nth-child(even) .body.svelte-zvxqyf{grid-row:1;grid-column:2}.teaser.svelte-zvxqyf:nth-child(even) img.svelte-zvxqyf{grid-row:1;grid-column:1}}@media(min-width: 1200px){section.svelte-zvxqyf.svelte-zvxqyf{gap:6rem}.teaser.svelte-zvxqyf.svelte-zvxqyf{gap:6rem}}
+footer.svelte-u1zmy0.svelte-u1zmy0{background:#2b312b;color:white}.section-container.svelte-u1zmy0.svelte-u1zmy0{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4rem}.content.svelte-u1zmy0.svelte-u1zmy0{margin:initial;padding:0;line-height:1.1}.nav-items.svelte-u1zmy0.svelte-u1zmy0{display:flex;flex-wrap:wrap;gap:4rem}.nav-items.svelte-u1zmy0 ul.svelte-u1zmy0{display:grid;gap:0.5rem}.nav-items.svelte-u1zmy0 ul .link.svelte-u1zmy0{border-bottom:2px solid white}.nav-items.svelte-u1zmy0 ul .link.svelte-u1zmy0:hover{border-color:transparent}.nav-items.svelte-u1zmy0 h3.svelte-u1zmy0{font-weight:500;font-size:1.5rem;margin-bottom:1rem}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-f5eedd42"><header class="section-container svelte-136lx2d"><div class="desktop-nav svelte-136lx2d"><a href="/" class="logo svelte-136lx2d">BillionTrees</a>
+    <nav class="svelte-136lx2d"><a class="link svelte-136lx2d" href="https://primosites.vercel.app/theme-nonprofit">Home</a><a class="link svelte-136lx2d" href="https://primosites.vercel.app/about">About</a><a class="link svelte-136lx2d" href="https://primosites.vercel.app/blog">Blog</a></nav></div>
+  <div class="mobile-nav svelte-136lx2d"><a href="/" class="logo svelte-136lx2d">BillionTrees</a>
+    <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><g id="iconifySvelte0"><g id="iconifySvelte1"><g id="iconifySvelte2" fill="currentColor"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g></g><!-- HTML_TAG_END --></svg></button>
+    </div></header></div> 
+<div class="section" id="section-67d0abf8"><section class="section-container svelte-zvxqyf"><div class="teasers svelte-zvxqyf"><div class="teaser svelte-zvxqyf"><div class="body svelte-zvxqyf"><h2 class="title svelte-zvxqyf">Discover the unseen</h2>
+          <div class="description"><!-- HTML_TAG_START --><p>Dive into a world full of hidden mysteries and breathtaking views. Explore the unexplored corners of the Earth from the comfort of your own home. </p><!-- HTML_TAG_END --></div>
+          <a class="link svelte-zvxqyf" href="/">Read more
+            </a></div>
+        <img src="https://picsum.photos/600/400?blur=10" alt="" class="svelte-zvxqyf">
+      </div></div></section></div> 
+<div class="section" id="section-8948ace4"><footer class="svelte-u1zmy0"><div class="section-container svelte-u1zmy0"><div class="content svelte-u1zmy0"><!-- HTML_TAG_START --><h3>BillionTrees <br></h3><p>321 Something St. Jackson, AL 20332</p><!-- HTML_TAG_END --></div>
+    <div class="nav-items svelte-u1zmy0"><nav><h3 class="svelte-u1zmy0">About Us</h3>
+          <ul class="svelte-u1zmy0"><li><a class="link svelte-u1zmy0" href="/">blog</a>
+              </li><li><a class="link svelte-u1zmy0" href="/">consectetur</a>
+              </li></ul>
+        </nav><nav><h3 class="svelte-u1zmy0">Get Involved</h3>
+          <ul class="svelte-u1zmy0"><li><a class="link svelte-u1zmy0" href="/">qui</a>
+              </li><li><a class="link svelte-u1zmy0" href="/">ex</a>
+              </li></ul>
+        </nav></div></div></footer></div> 
+
+      <script type="module">
+      import('/_symbols/b2dc1f29-f819-406a-af3e-4e9297b62939.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-f5eedd42'),
+              hydrate: true,
+              props: {"":"","logo":{"image":{"alt":"","src":"","url":"","size":null},"title":"BillionTrees"},"site_nav":[{"link":{"url":"https://primosites.vercel.app/theme-nonprofit","label":"Home"}},{"link":{"url":"https://primosites.vercel.app/about","label":"About"}},{"link":{"url":"https://primosites.vercel.app/blog","label":"Blog"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
