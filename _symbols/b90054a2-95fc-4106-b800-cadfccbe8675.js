@@ -2936,7 +2936,7 @@ function create_fragment(ctx) {
 			t0 = space();
 			span = element("span");
 			a = element("a");
-			t1 = text("Primo");
+			t1 = text("Volare Travel");
 			t2 = text(" Powered");
 			t3 = space();
 			div = element("div");
@@ -2963,7 +2963,7 @@ function create_fragment(ctx) {
 			var span_nodes = children(span);
 			a = claim_element(span_nodes, "A", { href: true, class: true });
 			var a_nodes = children(a);
-			t1 = claim_text(a_nodes, "Primo");
+			t1 = claim_text(a_nodes, "Volare Travel");
 			a_nodes.forEach(detach);
 			t2 = claim_text(span_nodes, " Powered");
 			span_nodes.forEach(detach);
@@ -2981,7 +2981,7 @@ function create_fragment(ctx) {
 		},
 		h() {
 			attr(nav_1, "class", "svelte-1m1m225");
-			attr(a, "href", "https://primo.so");
+			attr(a, "href", "https://www.facebook.com/profile.php?id=100090088035744");
 			attr(a, "class", "svelte-1m1m225");
 			attr(span, "class", "primo svelte-1m1m225");
 			attr(div, "class", "social-links svelte-1m1m225");
