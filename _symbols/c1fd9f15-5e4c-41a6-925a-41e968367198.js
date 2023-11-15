@@ -3369,10 +3369,10 @@ function create_if_block_1(ctx) {
 	let t12;
 	let t13;
 	let t14;
-	let form1;
 	let p2;
 	let t15;
 	let t16;
+	let form1;
 	let label3;
 	let span3;
 	let t17;
@@ -3421,10 +3421,10 @@ function create_if_block_1(ctx) {
 			t12 = text(t12_value);
 			t13 = text("\n        ανά άτομο");
 			t14 = space();
-			form1 = element("form");
 			p2 = element("p");
 			t15 = text("Μεταπωληση πακετου:");
 			t16 = space();
+			form1 = element("form");
 			label3 = element("label");
 			span3 = element("span");
 			t17 = text("Έξτρα ποσό πώλησης πακέτου ανά άτομο:");
@@ -3508,13 +3508,13 @@ function create_if_block_1(ctx) {
 			p1_nodes.forEach(detach);
 			form0_nodes.forEach(detach);
 			t14 = claim_space(nodes);
-			form1 = claim_element(nodes, "FORM", { class: true });
-			var form1_nodes = children(form1);
-			p2 = claim_element(form1_nodes, "P", { class: true });
+			p2 = claim_element(nodes, "P", { class: true });
 			var p2_nodes = children(p2);
 			t15 = claim_text(p2_nodes, "Μεταπωληση πακετου:");
 			p2_nodes.forEach(detach);
-			t16 = claim_space(form1_nodes);
+			t16 = claim_space(nodes);
+			form1 = claim_element(nodes, "FORM", { class: true });
+			var form1_nodes = children(form1);
 			label3 = claim_element(form1_nodes, "LABEL", { class: true });
 			var label3_nodes = children(label3);
 			span3 = claim_element(label3_nodes, "SPAN", {});
@@ -3604,10 +3604,10 @@ function create_if_block_1(ctx) {
 			append_hydration(p1, t12);
 			append_hydration(p1, t13);
 			insert_hydration(target, t14, anchor);
-			insert_hydration(target, form1, anchor);
-			append_hydration(form1, p2);
+			insert_hydration(target, p2, anchor);
 			append_hydration(p2, t15);
-			append_hydration(form1, t16);
+			insert_hydration(target, t16, anchor);
+			insert_hydration(target, form1, anchor);
 			append_hydration(form1, label3);
 			append_hydration(label3, span3);
 			append_hydration(span3, t17);
@@ -3662,6 +3662,8 @@ function create_if_block_1(ctx) {
 			if (detaching) detach(t1);
 			if (detaching) detach(form0);
 			if (detaching) detach(t14);
+			if (detaching) detach(p2);
+			if (detaching) detach(t16);
 			if (detaching) detach(form1);
 			mounted = false;
 			run_all(dispose);
@@ -3692,7 +3694,7 @@ function create_fragment(ctx) {
 			section = element("section");
 			div = element("div");
 			h2 = element("h2");
-			t0 = text("Δίαλεξε άθλημα:");
+			t0 = text("Διάλεξε άθλημα:");
 			t1 = space();
 			ul = element("ul");
 
@@ -3711,7 +3713,7 @@ function create_fragment(ctx) {
 			var div_nodes = children(div);
 			h2 = claim_element(div_nodes, "H2", { class: true });
 			var h2_nodes = children(h2);
-			t0 = claim_text(h2_nodes, "Δίαλεξε άθλημα:");
+			t0 = claim_text(h2_nodes, "Διάλεξε άθλημα:");
 			h2_nodes.forEach(detach);
 			t1 = claim_space(div_nodes);
 			ul = claim_element(div_nodes, "UL", { class: true });
