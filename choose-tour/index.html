@@ -1,0 +1,197 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <title>Partner EST</title><!-- HEAD_svelte-1t7ohez_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><link rel="icon" type="image/png" sizes="32x32" href="https://rhsjpcjkdhcpqcssusgg.supabase.co/storage/v1/object/public/images/db2153cd-f4b6-47c0-be2f-5903490dff6e/1699920176855Screenshot%202023-11-14%20at%202.02.51%20AM.png"><link rel="preconnect" href="https://fonts.bunny.net"><meta name="description" content="We are on a mission to bring sport tourism everywhere"><style>/* Reset & standardize default styles */
+@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
+
+/* Design tokens (apply to components) */
+:root {
+  /* Custom theme options */
+  --color-accent: #004700;
+
+  /* Base values */
+  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  --border-radius: 0;
+  --border-color: #e0e1e1;
+}
+
+/* Root element (use instead of `body`) */
+#page {
+  font-family: system-ui, sans-serif;
+  color: #111;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  background: white;
+}
+
+/* Elements */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+a.link {
+  line-height: 1.3;
+
+  border-bottom: 2px solid var(--color-accent);
+  transform: translateY(-2px); /* move link back into place */
+  transition: var(--transition, 0.1s border);
+}
+
+a.link:hover {
+    border-color: transparent;
+  }
+
+.heading {
+  font-size: 2.5rem;
+  line-height: 1.15;
+
+}
+
+.button {
+  color: white;
+  background: var(--color-accent, rebeccapurple);
+  border-radius: 0;
+  padding: 18px 24px;
+  transition: var(--transition, 0.1s box-shadow);
+  border: 0;
+}
+
+/* reset */
+
+.button:hover {
+    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);
+  }
+
+.button.inverted {
+    background: transparent;
+    color: var(--color-accent, rebeccapurple);
+  }
+
+/* Content Section */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+.content p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+.content img {
+    width: 100%;
+    margin: 2rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+  }
+.content a.link {
+    line-height: 1.3;
+    font-weight: 500;
+    border-bottom: 2px solid var(--color-accent);
+    transform: translateY(-2px); /* move link back into place */
+    transition: var(--transition, 0.1s border);
+  }
+.content a.link:hover {
+      border-color: transparent;
+    }
+.content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+.content h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+.content h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+.content ul {
+    list-style: disc;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.content ol {
+    list-style: decimal;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.content blockquote {
+    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--color-accent);
+  }
+</style><!-- HEAD_svelte-1t7ohez_END -->
+      <style>@import url("https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css");header.svelte-6vjs4t.svelte-6vjs4t.svelte-6vjs4t{border-bottom:1px solid var(--border-color)}.section-container.svelte-6vjs4t.svelte-6vjs4t.svelte-6vjs4t{display:flex;justify-content:space-between;align-items:center;padding-top:0.75rem;padding-bottom:0.75rem}.desktop-nav.svelte-6vjs4t.svelte-6vjs4t.svelte-6vjs4t{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;width:100%}.desktop-nav.svelte-6vjs4t .logo.svelte-6vjs4t.svelte-6vjs4t{font-size:1.5rem;font-weight:600;line-height:1.4;margin-right:1.5rem;width:var(--size)}.desktop-nav.svelte-6vjs4t nav.svelte-6vjs4t.svelte-6vjs4t{display:flex;align-items:center;gap:1.5rem}.desktop-nav.svelte-6vjs4t nav.svelte-6vjs4t a.svelte-6vjs4t{font-size:1rem;font-weight:400;display:none}.desktop-nav.svelte-6vjs4t nav a.nav-item.svelte-6vjs4t.svelte-6vjs4t{border-bottom:2px solid transparent;transition:border-color 0.1s}.desktop-nav.svelte-6vjs4t nav a.nav-item.svelte-6vjs4t.svelte-6vjs4t:hover{border-color:var(--color-brand)}.desktop-nav.svelte-6vjs4t button#open.svelte-6vjs4t.svelte-6vjs4t{font-size:1.5rem;margin-left:auto}nav#mobile-nav.svelte-6vjs4t.svelte-6vjs4t.svelte-6vjs4t{position:absolute;flex-direction:column;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow);border-radius:var(--border-radius);left:0.5rem;top:0.5rem;right:0.5rem;padding:2rem;z-index:2}nav#mobile-nav.svelte-6vjs4t a.svelte-6vjs4t.svelte-6vjs4t{display:block}nav#mobile-nav.svelte-6vjs4t hr.svelte-6vjs4t.svelte-6vjs4t{width:100%}nav#mobile-nav.svelte-6vjs4t .button.svelte-6vjs4t.svelte-6vjs4t{width:100%;justify-content:center}nav#mobile-nav.svelte-6vjs4t button#close.svelte-6vjs4t.svelte-6vjs4t{display:block;position:absolute;right:1rem;top:1rem;font-size:1.5rem}@media(min-width: 600px){#open.svelte-6vjs4t.svelte-6vjs4t.svelte-6vjs4t,#mobile-nav.svelte-6vjs4t.svelte-6vjs4t.svelte-6vjs4t{display:none}.desktop-nav.svelte-6vjs4t nav.svelte-6vjs4t a.svelte-6vjs4t{display:inline-block}}
+.section-container.svelte-1796lpc.svelte-1796lpc{display:grid;justify-content:center}.card.svelte-1796lpc.svelte-1796lpc{max-width:640px;border:1px solid var(--border-color, #eee);border-radius:var(--border-radius);padding:3.5rem 2.75rem;text-align:center;display:grid;place-items:center;gap:2rem}@media(min-width: 600px){.card.svelte-1796lpc.svelte-1796lpc{padding:4.5rem 7rem
+}}.heading-group.svelte-1796lpc.svelte-1796lpc{display:grid;place-content:start;text-align:left;max-width:700px;margin-bottom:3rem}.superhead.svelte-1796lpc.svelte-1796lpc{font-family:var(--font-body);color:var(--color-accent);font-size:0.875rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase}a.link.svelte-1796lpc.svelte-1796lpc{display:flex;align-items:center;gap:0.5rem}ul.svelte-1796lpc.svelte-1796lpc{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem}ul.svelte-1796lpc li.svelte-1796lpc{color:white;background:var(--color-accent, rebeccapurple);font-size:1.5rem;display:flex;align-items:center;justify-content:center;border-radius:10%;transition:0.1s transform}ul.svelte-1796lpc li.svelte-1796lpc:hover{transform:scale(1.1)}ul.svelte-1796lpc li button.svelte-1796lpc{font-size:1.5rem;padding:0.75rem}ul.svelte-1796lpc li a.svelte-1796lpc{font-size:1.5rem;padding:0.75rem}ul.svelte-1796lpc .selected.svelte-1796lpc{background:var(--color-base, rebeccapurple)}form.svelte-1796lpc.svelte-1796lpc{border:1px solid var(--border-color, #eee);border-radius:var(--border-radius);display:grid;gap:1rem;padding:2rem}form.svelte-1796lpc label.svelte-1796lpc{display:grid;gap:0.25rem;font-size:0.75rem}form.svelte-1796lpc input.svelte-1796lpc{width:100%;border-radius:4px;padding:0.5rem 0.75rem;font-size:1rem;transition:var(--transition, 0.1s outline-color);border:1.5px solid var(--border-color, #eee);border-radius:4px}form.svelte-1796lpc input.svelte-1796lpc:focus{outline-color:var(--color-accent, rebeccapurple)}
+.section-container.svelte-1m1m225.svelte-1m1m225{display:flex;justify-content:space-between;flex-direction:column;align-items:center;gap:1rem;padding-top:1rem;padding-bottom:1rem}@media(min-width: 600px){.section-container.svelte-1m1m225.svelte-1m1m225{flex-direction:row
+}}nav.svelte-1m1m225.svelte-1m1m225{display:flex;gap:1rem}nav.svelte-1m1m225 .link.svelte-1m1m225{border-color:transparent}nav.svelte-1m1m225 .link.svelte-1m1m225:hover{border-color:initial}.primo.svelte-1m1m225.svelte-1m1m225{font-weight:600;font-size:0.75rem}.primo.svelte-1m1m225 a.svelte-1m1m225{text-decoration:underline;color:rgb(53, 217, 148)}.social-links.svelte-1m1m225.svelte-1m1m225{display:flex;gap:1.5rem;font-size:1.5rem}.social-links.svelte-1m1m225 a.svelte-1m1m225{color:var(--color-accent, rebeccapurple);transition:var(--transition, 0.1s transform)}.social-links.svelte-1m1m225 a.svelte-1m1m225:hover{transform:scale(1.1)}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-8787ca51"><header class="svelte-6vjs4t"><div class="section-container svelte-6vjs4t"><div class="desktop-nav svelte-6vjs4t"><a href="/" class="logo svelte-6vjs4t" style="--size: 8rem;"><img src="https://rhsjpcjkdhcpqcssusgg.supabase.co/storage/v1/object/public/images/db2153cd-f4b6-47c0-be2f-5903490dff6e/EST_LOGO.PNG1699966831334" alt="Logoipsum"></a>
+      <nav class="svelte-6vjs4t">
+        <a class="button svelte-6vjs4t" href="tel:+306909033803">Call us!</a>
+        <button id="open" aria-label="Open mobile navigation" class="svelte-6vjs4t"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--ic"><!-- HTML_TAG_START --><path fill="currentColor" d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/><!-- HTML_TAG_END --></svg></button></nav></div>
+    </div></header></div> 
+<div class="section" id="section-55bde104"><section class="section-container svelte-1796lpc"><div class="card svelte-1796lpc"><h2 class="heading svelte-1796lpc">Διάλεξε άθλημα:</h2>
+    <ul class="svelte-1796lpc"><li class=" svelte-1796lpc"><button class=" svelte-1796lpc">Ποδόσφαιρο</button>
+      </li><li class=" svelte-1796lpc"><button class=" svelte-1796lpc">Μπάσκετ</button>
+      </li></ul>
+    </div></section></div> 
+<div class="section" id="section-e1a25985"><footer class="section-container svelte-1m1m225"><nav class="svelte-1m1m225"><a class="link svelte-1m1m225" href="/">Home</a><a class="link svelte-1m1m225" href="/">About</a></nav>
+  <span class="primo svelte-1m1m225"><a href="https://primo.so" class="svelte-1m1m225">Primo</a> Powered </span>
+  <div class="social-links svelte-1m1m225"><a href="/" aria-label="proident" class="svelte-1m1m225"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"/><!-- HTML_TAG_END --></svg>
+      </a><a href="/" aria-label="officia" class="svelte-1m1m225"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"/><!-- HTML_TAG_END --></svg>
+      </a></div></footer></div> 
+
+      <script type="module">
+      import('/_symbols/b90054a2-95fc-4106-b800-cadfccbe8675.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-e1a25985'),
+              hydrate: true,
+              props: {"nav":[{"link":{"url":"/","label":"Home"}},{"link":{"url":"/","label":"About"}}],"social":[{"icon":"mdi:twitter","link":{"url":"/","label":"proident"}},{"icon":"mdi:twitter","link":{"url":"/","label":"officia"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/ab8733e7-d126-47c3-a17f-c75da563a51e.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-8787ca51'),
+              hydrate: true,
+              props: {"logo":{"size":"8","image":{"alt":"Logoipsum","url":"https://rhsjpcjkdhcpqcssusgg.supabase.co/storage/v1/object/public/images/db2153cd-f4b6-47c0-be2f-5903490dff6e/EST_LOGO.PNG1699966831334"}},"site_nav":[],"cta":[{"link":{"url":"tel:+306909033803","label":"Call us!"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/c1fd9f15-5e4c-41a6-925a-41e968367198.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-55bde104'),
+              hydrate: true,
+              props: {"sports":[{"sportname":"Ποδόσφαιρο","availabletours":[{"tourlink":{"url":"https://to-italy.est.volaretravel.gr/tour-napoli","label":"Δείξε το πρόγραμμα στην ομάδα σου!","active":false},"tourname":"Νάπολη","child_price":"399","adult_price_double_room":"450","adult_price_single_room":"520"},{"tourlink":{"url":"https://to-italy.est.volaretravel.gr/tour-salerno-amalfitana","label":"Δείξε το πρόγραμμα στην ομάδα σου!","active":false},"tourname":"Σαλέρνο","child_price":"399","adult_price_double_room":"450","adult_price_single_room":"520"},{"tourlink":{"url":"https://to-italy.est.volaretravel.gr/tour-bari","label":"Δείξε το πρόγραμμα στην ομάδα σου!","active":false},"tourname":"Μπάρι","child_price":"370","adult_price_double_room":"420","adult_price_single_room":"475"},{"tourlink":{"url":"https://to-italy.est.volaretravel.gr/tour-brindisi","label":"Δείξε το πρόγραμμα στην ομάδα σου!","active":false},"tourname":"Μπρίντιζι","child_price":"370","adult_price_double_room":"420","adult_price_single_room":"475"}]},{"sportname":"Μπάσκετ","availabletours":[]}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
